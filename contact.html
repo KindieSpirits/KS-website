@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://www.kindiespirits.com/contact">
+    <meta name="description" content="Contact KindieSpirits — developer of Veneer V∅lt. Questions, fan mail, business enquiries.">
+
+    <meta property="og:title" content="Contact — KindieSpirits"/>
+    <meta property="og:description" content="Open a channel with the KindieSpirits team."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.kindiespirits.com/contact"/>
+    <meta property="og:image" content="images/social.jpg"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#19192b">
+
+    <link rel="preload" as="font" type="font/woff2" href="fonts/KarmaSuture.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="css/contact.css"></noscript>
+
+    <title>Contact | KindieSpirits — Veneer V∅lt</title>
+</head>
+<body>
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div"></div>
+        <div class="container">
+            <a class="logo" aria-label="click to go to home page" href="index.html">
+                <img class="light" aria-hidden="true" src="images/logo-light.png" decoding="async" alt="KindieSpirits logo" width="221" height="66">
+            </a>
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="presskit.html">Press Kit</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li>
+                        <a class="button-solid button-steam"
+                           href="https://store.steampowered.com/app/APPID/Veneer_Volt/"
+                           target="_blank" rel="noopener">
+                            ♥ Wishlist
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- Interior hero -->
+        <section id="int-hero">
+            <h1 class="cursor">Open a Channel</h1>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/landing-m.webp">
+                <source media="(min-width: 601px)" srcset="images/landing.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/landing.jpg" alt="" width="400" height="662">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FORM                      -->
+        <!-- ============================================ -->
+
+        <section id="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+
+                    <!-- Left: form -->
+                    <div class="contact-form-wrap">
+                        <div class="terminal-box contact-form-inner">
+                            <p class="contact-form-title">&gt; Transmit Message</p>
+
+                            <form
+                                name="contact"
+                                method="POST"
+                                data-netlify="true"
+                                netlify-honeypot="bot-field"
+                                action="/contact.html?success=true">
+
+                                <input type="hidden" name="form-name" value="contact">
+                                <p hidden>
+                                    <label>Don't fill this out: <input name="bot-field"></label>
+                                </p>
+
+                                <div class="cf-group cf-group--half">
+                                    <label for="cf-name">&gt; Name</label>
+                                    <input
+                                        type="text"
+                                        id="cf-name"
+                                        name="name"
+                                        placeholder="Your name"
+                                        autocomplete="name"
+                                        tabindex="1"
+                                        required>
+                                </div>
+
+                                <div class="cf-group cf-group--half">
+                                    <label for="cf-email">&gt; Email</label>
+                                    <input
+                                        type="email"
+                                        id="cf-email"
+                                        name="email"
+                                        placeholder="your@email.com"
+                                        autocomplete="email"
+                                        tabindex="2"
+                                        required>
+                                </div>
+
+                                <div class="cf-group">
+                                    <label for="cf-subject">&gt; Subject</label>
+                                    <select id="cf-subject" name="subject" tabindex="3" required>
+                                        <option value="" disabled selected>-- Select subject --</option>
+                                        <option value="fan-mail">Fan Mail / General</option>
+                                        <option value="press">Press Enquiry</option>
+                                        <option value="bug">Bug Report</option>
+                                        <option value="business">Business</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="cf-group cf-group--full">
+                                    <label for="cf-message">&gt; Message</label>
+                                    <textarea
+                                        id="cf-message"
+                                        name="message"
+                                        placeholder="Write your message here..."
+                                        rows="6"
+                                        tabindex="4"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="button-solid" tabindex="5">
+                                    &gt;&gt; Send Transmission
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right: info -->
+                    <aside class="contact-info">
+                        <div class="terminal-box contact-info-block">
+                            <h2>&gt; Contact Info</h2>
+                            <div class="ci-item">
+                                <span class="ci-label">Press</span>
+                                <a href="mailto:press@kindiespirits.com">press@kindiespirits.com</a>
+                            </div>
+                            <div class="ci-item">
+                                <span class="ci-label">General</span>
+                                <a href="mailto:hello@kindiespirits.com">hello@kindiespirits.com</a>
+                            </div>
+                            <hr class="term-divider">
+                            <h2>&gt; Channels</h2>
+                            <div class="ci-item">
+                                <a href="https://store.steampowered.com/app/APPID/" target="_blank" rel="noopener">Steam Page</a>
+                            </div>
+                            <div class="ci-item">
+                                <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+                            </div>
+                            <div class="ci-item">
+                                <a href="#" target="_blank" rel="noopener">Discord</a>
+                            </div>
+                            <div class="ci-item">
+                                <a href="#" target="_blank" rel="noopener">TikTok</a>
+                            </div>
+                            <hr class="term-divider">
+                            <p class="ci-note">
+                                For press enquiries, review keys and media assets — visit the
+                                <a href="presskit.html">Press Kit page</a> or use the form there directly.
+                            </p>
+                        </div>
+
+                        <div class="contact-steam-cta">
+                            <p>Interested in the game?</p>
+                            <a href="https://store.steampowered.com/app/APPID/Veneer_Volt/"
+                               class="button-solid button-steam"
+                               target="_blank" rel="noopener">
+                                ♥ Wishlist on Steam
+                            </a>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="/index.html">
+                    <img loading="lazy" decoding="async" src="images/logo-light.png" alt="KindieSpirits logo" width="264" height="78">
+                </a>
+                <p>Mr. Veneer's Museum Security System — All bots monitored.</p>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Navigate</h2></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="presskit.html">Press Kit</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Signal</h2></li>
+                        <li><a href="mailto:press@kindiespirits.com">press@kindiespirits.com</a></li>
+                        <li><a href="https://store.steampowered.com/app/APPID/" target="_blank" rel="noopener">Steam Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="credit">
+            <span>Developed by</span>
+            <a href="https://kindiespirits.com" target="_blank" rel="noopener">KindieSpirits</a>
+            <span class="copyright"> Copyright 2024 – Present</span>
+        </div>
+    </footer>
+
+    <script defer src="nav.js"></script>
+    <script defer>
+        document.addEventListener('scroll', () => {
+            const scroll = document.documentElement.scrollTop;
+            if (scroll >= 100) {
+                document.querySelector('body').classList.add('scroll');
+            } else {
+                document.querySelector('body').classList.remove('scroll');
+            }
+        });
+    </script>
+</body>
+</html>
