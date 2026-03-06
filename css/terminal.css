@@ -61,7 +61,7 @@ body {
   40%  { clip-path: inset(43% 0 1%  0); transform: translate(-3px, 0); }
   60%  { clip-path: inset(25% 0 58% 0); transform: translate( 3px, 0); }
   80%  { clip-path: inset(54% 0 7%  0); transform: translate(-3px, 0); }
-  100% { clip-path: inset(58% 0 43% 0); transform: translate( 0,   0); }
+  100% { clip-path: inset(40% 0 61% 0); transform: translate(-3px, 0); }
 }
 
 @keyframes glitch-2 {
@@ -70,7 +70,7 @@ body {
   40%  { clip-path: inset(11% 0 66% 0); transform: translate( 3px, 0); color: #ffad00; }
   60%  { clip-path: inset(72% 0 3%  0); transform: translate(-3px, 0); color: #ff4f00; }
   80%  { clip-path: inset(38% 0 49% 0); transform: translate( 3px, 0); color: #1b58ff; }
-  100% { clip-path: inset(61% 0 7%  0); transform: translate( 0,   0); color: #ffad00; }
+  100% { clip-path: inset(24% 0 29% 0); transform: translate( 3px, 0); color: #ff4f00; }
 }
 
 /* ---- .glitch component (requires data-text attr) ---- */

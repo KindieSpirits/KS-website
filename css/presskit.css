@@ -840,3 +840,52 @@
     flex-wrap: nowrap;
   }
 }
+
+/* ---- Sidebar layout (factsheet left) ---- */
+@media only screen and (min-width: 0em) {
+  .pk-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .pk-sidebar {
+    width: 100%;
+  }
+
+  .pk-main-col {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pk-layout {
+    flex-direction: row;
+    gap: 3em;
+    align-items: flex-start;
+  }
+
+  .pk-sidebar {
+    flex: 0 0 22em;
+    position: sticky;
+    top: 3.5em;
+    align-self: flex-start;
+  }
+
+  .pk-sidebar .pk-section {
+    padding-top: 3.5em;
+    border-bottom: none;
+  }
+
+  .pk-main-col {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .pk-sidebar {
+    flex: 0 0 26em;
+  }
+}

@@ -381,14 +381,15 @@
     font-weight: 400;
   }
 
+  /* --- Mobile Nav Active --- */
   #navigation #navbar-menu ul li a.active:before {
     content: '';
     position: absolute;
     display: block;
-    height: 0.42105263em;
+    height: 0.2em;
     background: var(--primary);
-    opacity: 0.25;
-    bottom: 0.26315789em;
+    opacity: 0.4;
+    bottom: -0.1em;
     border-radius: 0;
     left: -0.31578947em;
     right: -0.31578947em;
@@ -510,12 +511,12 @@
     content: '';
     position: absolute;
     display: block;
-    height: 0.31578947em;
+    height: 0.15em;
     border-radius: 0;
     background: var(--primary);
     box-shadow: var(--glow-sm);
     opacity: 1;
-    bottom: 0.10526316em;
+    bottom: -0.2em;
     z-index: -1;
     left: 0;
     width: 0%;
@@ -530,11 +531,11 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 0.31578947em;
+    height: 0.15em;
     background: var(--primary);
     box-shadow: var(--glow-sm);
     opacity: 1;
-    bottom: 0.10526316em;
+    bottom: -0.2em;
     border-radius: 0;
     left: 0em;
     z-index: -1;

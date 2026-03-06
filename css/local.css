@@ -481,10 +481,16 @@
   }
 
   /* Form column */
-  .contact-form-col { width: 100%; flex: 1; }
+  .contact-form-col { 
+    width: 100%; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+  }
 
   .contact-form-inner {
     padding-top: 2.5em;
+    flex: 1;
   }
 
   .contact-form-title {
@@ -679,4 +685,17 @@
 
 @media only screen and (min-width: 64em) {
   #contact { padding: 8em 0 10em; }
+}
+
+/* Orange small descriptor used on About page */
+.orange-tag {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--accent-orange);
+  text-shadow: 0 0 8px rgba(255, 173, 0, 0.45);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin: 0.4em 0 1em;
+  display: block;
+  opacity: 0.95;
 }
