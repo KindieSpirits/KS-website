@@ -54,32 +54,39 @@ body {
   animation: flicker 9s infinite;
 }
 
-/* ---- Glitch keyframes ---- */
-@keyframes glitch-1 {
-  0%   { clip-path: inset(40% 0 61% 0); transform: translate(-3px, 0); }
-  20%  { clip-path: inset(92% 0 1%  0); transform: translate( 3px, 0); }
-  40%  { clip-path: inset(43% 0 1%  0); transform: translate(-3px, 0); }
-  60%  { clip-path: inset(25% 0 58% 0); transform: translate( 3px, 0); }
-  80%  { clip-path: inset(54% 0 7%  0); transform: translate(-3px, 0); }
-  100% { clip-path: inset(40% 0 61% 0); transform: translate(-3px, 0); }
+/* ---- Glitch keyframe — snap occasionale ---- */
+@keyframes glitch-snap {
+  0%, 92%, 100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  93% {
+    opacity: 1;
+    transform: translate(-10px, 2px);
+    clip-path: inset(10% 0 70% 0);
+  }
+  95% {
+    opacity: 1;
+    transform: translate(15px, -3px);
+    clip-path: inset(40% 0 30% 0);
+  }
+  97% {
+    opacity: 1;
+    transform: translate(-5px, 0);
+    clip-path: inset(70% 0 10% 0);
+  }
 }
 
-@keyframes glitch-2 {
-  0%   { clip-path: inset(24% 0 29% 0); transform: translate( 3px, 0); color: #ff4f00; }
-  20%  { clip-path: inset(54% 0 21% 0); transform: translate(-3px, 0); color: #1b58ff; }
-  40%  { clip-path: inset(11% 0 66% 0); transform: translate( 3px, 0); color: #ffad00; }
-  60%  { clip-path: inset(72% 0 3%  0); transform: translate(-3px, 0); color: #ff4f00; }
-  80%  { clip-path: inset(38% 0 49% 0); transform: translate( 3px, 0); color: #1b58ff; }
-  100% { clip-path: inset(24% 0 29% 0); transform: translate( 3px, 0); color: #ff4f00; }
-}
-
-/* ---- .glitch component (requires data-text attr) ---- */
+/* ---- .glitch component (richiede attributo data-text) ---- */
 .glitch {
   position: relative;
   display: inline-block;
 }
 
-.glitch::before,
+.glitch::before {
+  display: none;
+}
+
 .glitch::after {
   content: attr(data-text);
   position: absolute;
@@ -92,19 +99,11 @@ body {
   font-weight: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
+  color: var(--primary);
+  background: var(--bg-main);
+  opacity: 0;
   pointer-events: none;
-}
-
-.glitch::before {
-  animation: glitch-1 4s infinite linear;
-  color: #ff4f00;
-  opacity: 0.8;
-}
-
-.glitch::after {
-  animation: glitch-2 4s infinite linear reverse;
-  color: #1b58ff;
-  opacity: 0.8;
+  animation: glitch-snap 3s infinite;
 }
 
 /* ---- Phosphor glow utilities ---- */

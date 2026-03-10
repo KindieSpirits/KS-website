@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#19192b">
     <meta name="theme-color" content="#19192b">
 
-    <link rel="preload" as="image" href="images/landing-m.webp">
+    <link rel="preload" as="image" href="images/landing.webm">
     <link rel="preload" as="font" type="font/woff2" href="fonts/KarmaSuture.woff2" crossorigin>
 
     <link rel="stylesheet" href="css/critical.css">
@@ -49,7 +49,7 @@
             </a>
             <nav id="navbar-menu">
                 <ul>
-                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="presskit.html">Press Kit</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -87,8 +87,7 @@
                         <span class="glitch" data-text="Veneer Vault">Veneer Vault</span>
                     </h1>
                     <p>
-                        Grab your friends and clock in as adorable Guard Bots in Mr. Veneer's underground museum vault.
-                        Cleanse infected artefacts by day, set up exhibitions — and when the lights go out, survive the possessed exhibits that come alive.
+                        Grab your friends and clock in as adorable Guard Bots in the most extravagant museum. Set up exhibitions and patrol the halls, but beware — when the lights go out, the exhibits wander off and cause expensive mayhem. Can you contain the damage to Mr. Veneer's pockets or will he have to "upgrade" you?
                     </p>
                     <div class="hero-cta-group">
                         <a class="button-solid button-steam"
@@ -102,11 +101,13 @@
                     </div>
                 </div>
             </div>
-            <picture>
+            <picture class="hero-static" aria-hidden="true">
                 <source media="(max-width: 600px)" srcset="images/landing-m.webp">
-                <source media="(min-width: 601px)" srcset="images/landing.jpg">
-                <img aria-hidden="true" decoding="async" src="images/landing.jpg" alt="Veneer Volt" width="275" height="132">
+                <img aria-hidden="true" decoding="async" src="images/VeneerVolt_gameplay_4.jpg" alt="" width="275" height="132">
             </picture>
+            <video class="hero-video" autoplay muted loop playsinline poster="images/VeneerVolt_gameplay_4.jpg" aria-hidden="true">
+                <source src="images/landing.webm" type="video/webm">
+            </video>
         </section>
 
         <!-- ============================================ -->
@@ -120,7 +121,8 @@
                 </picture>
                 <h2>Co-op Survival Horror</h2>
                 <p>
-                    Clock in solo or with up to 3 friends. Coordinate patrols, cleanse infected props — and survive the night when possessed exhibits attack.
+                    Clock in solo or squad up with 3 friends in a race against time. <br />
+                    Complete your shift objectives before sunset, because every task left unfinished makes the coming night twice as deadly for your team.
                 </p>
             </div>
             <div class="card">
@@ -129,7 +131,8 @@
                 </picture>
                 <h2>Curate &amp; Cleanse</h2>
                 <p>
-                    Follow daily exhibition guidelines, set up displays, and track down infected artefacts before night falls. Every prop you miss becomes a threat.
+                    Follow strict guidelines to set up displays and track down infected artifacts. <br />
+                    Precision is vital: every cursed prop you fail to contain during the day becomes a threat once the lights go out.
                 </p>
             </div>
             <div class="card">
@@ -138,7 +141,9 @@
                 </picture>
                 <h2>Survive the Night</h2>
                 <p>
-                    Possessed exhibits roam the halls. A boss prop stalks every shift. Protect the valuables, destroy what you can't contain — or face Mr. Veneer's upgrade policy.
+                    Possessed exhibits roams around. <br />
+                    Protect the valuables against themselves and eliminate threats before they rack up a repair bill. 
+                    you really don't want to trigger Mr. Veneer’s "Upgrade Policy"
                 </p>
             </div>
         </section>
@@ -170,9 +175,9 @@
                     <a class="button-solid" href="about.html">&gt;&gt; About the Studio</a>
                 </div>
                 <picture class="image-box">
-                    <source media="(max-width: 600px)" srcset="images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="images/cabinets2.jpg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/cabinets2.jpg" alt="Veneer Volt museum interior" width="400" height="662">
+                    <source media="(max-width: 600px)" srcset="images/VeneerVolt_gameplay_6.jpg">
+                    <source media="(min-width: 601px)" srcset="images/VeneerVolt_gameplay_6.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_6.jpg" alt="Veneer Volt museum interior" width="400" height="662">
                 </picture>
             </div>
         </section>
@@ -202,15 +207,15 @@
                         Coordinate with your crew, prioritise containment, and whatever you do — don't let museum value hit zero.
                     </p>
                     <a class="button-solid button-steam"
-                       href="https://store.steampowered.com/app/4361980/"
+                       href="https://store.steampowered.com/app/4361980/Veneer_Volt/"
                        target="_blank" rel="noopener">
                         ♥ Wishlist on Steam
                     </a>
                 </div>
                 <picture class="image-box">
-                    <source media="(max-width: 600px)" srcset="images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="images/cabinets2.jpg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/cabinets2.jpg" alt="Night shift chaos" width="400" height="662">
+                    <source media="(max-width: 600px)" srcset="images/VeneerVolt_gameplay_5.jpg">
+                    <source media="(min-width: 601px)" srcset="images/VeneerVolt_gameplay_5.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_5.jpg" alt="Night shift chaos" width="400" height="662">
                 </picture>
             </div>
         </section>
@@ -225,7 +230,7 @@
                 <p>
                     Mr. Veneer's vault won't protect itself. Wishlist Veneer V∅lt on Steam and be first through the door when it opens.
                 </p>
-                <a href="https://store.steampowered.com/app/4361980"
+                <a href="https://store.steampowered.com/app/4361980/Veneer_Volt/"
                    class="button-solid button-steam"
                    target="_blank" rel="noopener">
                     ♥ Wishlist on Steam
@@ -306,8 +311,8 @@
                         <div class="terminal-box contact-info-block">
                             <h3>&gt; Contact Info</h3>
                             <div class="ci-row">
-                                <span class="ci-label">Press</span>
-                                <a href="mailto:press@kindiespirits.com">press@kindiespirits.com</a>
+                                <span class="ci-label">Support</span>
+                                <a href="mailto:support@kindiespirits.com">support@kindiespirits.com</a>
                             </div>
                             <div class="ci-row">
                                 <span class="ci-label">General</span>
@@ -317,7 +322,7 @@
                         <div class="terminal-box contact-info-block">
                             <h3>&gt; Channels</h3>
                             <ul class="ci-links">
-                                <li><a href="https://store.steampowered.com/app/4361980/" target="_blank" rel="noopener">Steam</a></li>
+                                <li><a href="https://store.steampowered.com/app/4361980/Veneer_Volt/" target="_blank" rel="noopener">Steam</a></li>
                                 <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
                                 <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
                                 <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
@@ -358,7 +363,7 @@
                     </ul>
                     <ul>
                         <li><h2>Channels</h2></li>
-                        <li><a href="https://store.steampowered.com/app/APPID/" target="_blank" rel="noopener">Steam</a></li>
+                        <li><a href="https://store.steampowered.com/app/4361980/Veneer_Volt/" target="_blank" rel="noopener">Steam</a></li>
                         <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
                         <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
                         <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
