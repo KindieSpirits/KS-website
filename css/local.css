@@ -40,10 +40,12 @@
     /* Scan left→right — titoli, heading */
     [data-anim="scan"] {
         clip-path: inset(0 100% 0 0);
+        will-change: clip-path;
     }
 
         [data-anim="scan"].anim-in {
             animation: termScan 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            clip-path: inset(0 0% 0 0); /* fallback esplicito post-animazione */
         }
 
     @keyframes termScan {
@@ -598,8 +600,8 @@
     margin-bottom: 3em;
   }
 
-  .contact-header .pk-label {
-    font-family: 'Courier New', Courier, monospace;
+  .pk-label {
+     font-family: 'Courier New', Courier, monospace;
     font-size: 0.75em;
     color: var(--accent-orange);
     text-shadow: 0 0 8px rgba(255, 173, 0, 0.5);
