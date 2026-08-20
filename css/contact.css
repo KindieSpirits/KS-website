@@ -93,6 +93,25 @@
   #form #contact .button-solid {
     border: none;
   }
+
+  .cf-consent-note {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72em;
+    color: rgba(210, 215, 217, 0.5);
+    line-height: 1.5em;
+    margin-top: 0.9em;
+    text-align: center;
+  }
+
+  .cf-consent-note a {
+    color: var(--primary);
+    opacity: 0.9;
+  }
+
+  .cf-consent-note a:hover {
+    opacity: 1;
+    text-shadow: var(--glow-sm);
+  }
   #form .contact-right {
     background: #1a1a1a;
     padding: 2.8125em 2.125em;
