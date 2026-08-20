@@ -1,0 +1,90 @@
+/* ============================================ */
+/*     VENEER V∅LT — Legal pages (Privacy /      */
+/*     Impressum) — shares terminal aesthetic    */
+/* ============================================ */
+
+#legal-content {
+  padding: 4em 0 6em;
+}
+
+#legal-content .container {
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.legal-updated {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8em;
+  color: rgba(210, 215, 217, 0.5);
+  margin-bottom: 2.5em;
+}
+
+.legal-block {
+  margin-bottom: 2.5em;
+}
+
+.legal-block h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  color: var(--primary);
+  text-shadow: var(--glow-sm);
+  margin-bottom: 0.75em;
+}
+
+.legal-block h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  color: var(--text-light);
+  margin: 1.25em 0 0.5em;
+}
+
+.legal-block p,
+.legal-block li {
+  color: var(--text-light);
+  opacity: 0.85;
+  line-height: 1.7em;
+  font-size: 0.95em;
+}
+
+.legal-block ul {
+  margin: 0.5em 0 1em 1.2em;
+  list-style: disc;
+}
+
+.legal-block li {
+  margin-bottom: 0.4em;
+}
+
+.legal-block a {
+  color: var(--primary);
+  text-shadow: var(--glow-sm);
+}
+
+.legal-note {
+  border: 1px dashed var(--primary);
+  padding: 1em 1.25em;
+  margin: 1em 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82em;
+  color: var(--text-light);
+  opacity: 0.9;
+}
+
+.legal-toc {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  margin-bottom: 3em;
+}
+
+.legal-toc a {
+  color: var(--text-light);
+  opacity: 0.75;
+  display: block;
+  padding: 0.25em 0;
+}
+
+.legal-toc a:hover {
+  color: var(--primary);
+  opacity: 1;
+}

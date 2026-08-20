@@ -90,20 +90,48 @@
                 <div class="pk-label" aria-hidden="true" data-anim="fade"> // In-game screenshots — Veneer V∅lt:</div>
                 <div class="about-screens-grid">
                     <figure class="about-screen-item" data-anim="flicker" data-anim-delay="0">
-                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_1.jpg" alt="Veneer Volt — exhibition setup" width="600" height="338">
-                        <figcaption>&gt; Cleaning Process</figcaption>
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_1.jpg" alt="Veneer Volt — Egyptian Boss" width="600" height="338">
+                        <figcaption>&gt; Egyptian Boss</figcaption>
                     </figure>
-                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="120">
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="80">
                         <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_2.jpg" alt="Veneer Volt — Guard Bots patrolling" width="600" height="338">
-                        <figcaption>&gt; Grabbing Artifacts</figcaption>
+                        <figcaption>&gt; Guard Bots patrolling</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="160">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_3.jpg" alt="Veneer Volt — Museum interiors" width="600" height="338">
+                        <figcaption>&gt; Museum interiors</figcaption>
                     </figure>
                     <figure class="about-screen-item" data-anim="flicker" data-anim-delay="240">
-                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_3.jpg" alt="Veneer Volt — night shift chaos" width="600" height="338">
-                        <figcaption>&gt; Security Room</figcaption>
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_4.jpg" alt="Veneer Volt — Security" width="600" height="338">
+                        <figcaption>&gt; Security</figcaption>
                     </figure>
-                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="360">
-                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_4.jpg" alt="Veneer Volt — Mr. Veneer's budget screen" width="600" height="338">
-                        <figcaption>&gt; You are being hunted</figcaption>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="320">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_5.jpg" alt="Veneer Volt — Atrium" width="600" height="338">
+                        <figcaption>&gt; Atrium</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="400">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_6.jpg" alt="Veneer Volt — Interactive whiteboard" width="600" height="338">
+                        <figcaption>&gt; Interactive whiteboard</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="480">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_7.jpg" alt="Veneer Volt — Security" width="600" height="338">
+                        <figcaption>&gt; Security</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="560">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_8.jpg" alt="Veneer Volt — Crafting terminal" width="600" height="338">
+                        <figcaption>&gt; Crafting terminal</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="640">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_9.jpg" alt="Veneer Volt — Bubble lamp" width="600" height="338">
+                        <figcaption>&gt; Bubble lamp</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="720">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_10.jpg" alt="Veneer Volt — Night chaos" width="600" height="338">
+                        <figcaption>&gt; Night chaos</figcaption>
+                    </figure>
+                    <figure class="about-screen-item" data-anim="flicker" data-anim-delay="800">
+                        <img loading="lazy" decoding="async" src="images/VeneerVolt_gameplay_11.jpg" alt="Veneer Volt — Voxel Destruction" width="600" height="338">
+                        <figcaption>&gt; Voxel Destruction</figcaption>
                     </figure>
                 </div>
             </div>
@@ -173,6 +201,15 @@
     </main>
 
     <!-- ============================================ -->
+    <!--             Screenshot Lightbox              -->
+    <!-- ============================================ -->
+
+    <div id="screenshot-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot">
+        <button type="button" class="lightbox-close" aria-label="Close">&gt;&gt; Close [Esc]</button>
+        <img src="" alt="">
+    </div>
+
+    <!-- ============================================ -->
     <!--                     FOOTER                   -->
     <!-- ============================================ -->
 
@@ -203,6 +240,11 @@
                         <li><h2>Signal</h2></li>
                         <li><a href="mailto:support@kindiespirits.com">support@kindiespirits.com</a></li>
                         <li><a href="mailto:hello@kindiespirits.com">hello@kindiespirits.com</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Legal</h2></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/impressum.html">Impressum</a></li>
                     </ul>
                 </div>
             </div>
@@ -239,6 +281,46 @@
             }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
             els.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+    <script defer>
+        // Screenshot lightbox — click a screenshot to enlarge, click again (or Esc) to close.
+        (function () {
+            var lightbox = document.getElementById('screenshot-lightbox');
+            if (!lightbox) return;
+            var lightboxImg = lightbox.querySelector('img');
+            var closeBtn = lightbox.querySelector('.lightbox-close');
+            var thumbs = document.querySelectorAll('.about-screen-item img');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.add('open');
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('open');
+                lightboxImg.src = '';
+            }
+
+            thumbs.forEach(function (img) {
+                img.addEventListener('click', function () {
+                    openLightbox(img.src, img.alt);
+                });
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                // Clicking anywhere on the overlay (including the enlarged image) closes it.
+                if (e.target !== closeBtn) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+                    closeLightbox();
+                }
+            });
         })();
     </script>
 </body>
